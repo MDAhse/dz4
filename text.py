@@ -8,9 +8,9 @@ a = 1
 
 result = re.split(r'[\n\.]', result)
 text1 = open("text1.txt", "w")
-for i in text1:
-    result1 = re.search(r'^\D.+$', result)
-    result1 = re.sub(r'^', str(a), result1)
+for i in result:
+    result1 = re.search(r'^\D.+$', str(result))
+    result1 = re.sub(r'^', str(a), str(result1))
     a+=1
     text1.write(result1)
 text.close()
